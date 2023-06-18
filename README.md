@@ -32,14 +32,14 @@ La ventana de Splash Screen será la primera ventana co la que le usuario intera
   ![image](https://github.com/Andineitor/ionic-cameraGeolocation/assets/85330514/60e520ba-058a-4444-9a74-3457730ae8ca)
 
 
-### 2. Geolocalizacion 
+### 3) Geolocalizacion 
 La APP permitirá al usuario poder enviar sus datos de localización en tiempo real y a su vez poder almacenarla en la base de datos de Firebase para que existe un registro en cada interacción realizada por cada usuario respectivamente.
 
       Se puede visualizar los datos de geolocalización,las imagenes y datos asociados de cada usuario almacenados en FireBase
    ![geolocalización_firebase](https://github.com/Andineitor/ionic-cameraGeolocation/assets/85330514/e8def4a7-8668-4f47-be91-980e5ffb493e)
 
 
-### 3. Fotografía
+### 4) Fotografía
 El implementar una imagen adjunta a la localización de un usuario es de gran importancia ya que permite tener una mayor exactitud y precisión en la localización verdadera y con muy poco margen de error de una persona que utilize este servicio.
 
       Se puede visualizar las imagenes y datos asociado de cada usuario.
