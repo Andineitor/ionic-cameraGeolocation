@@ -1,0 +1,35 @@
+
+<ion-header [translucent]="true">
+    <ion-toolbar color="success">
+        <ion-title>Gallery</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-list>
+      <ion-item *ngFor="let item of data">
+        <ion-thumbnail slot="start">
+          <img [src]="item.imageUrl" alt="Photo">
+        </ion-thumbnail>
+        <ion-label>
+            <ion-label>
+                <h2>{{ item.id }}</h2>
+                <h3>Latitud: {{ item.latitude }}</h3>
+                <h3>Longitud: {{ item.longitude }}</h3>
+              </ion-label>
+        </ion-label>
+        <ion-button (click)="deleteData(item)">Eliminar</ion-button>
+      </ion-item>
+    </ion-list>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button color="primary" (click)="goToTab3()">
+          <ion-icon name="arrow-back"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+      <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+        <ion-fab-button color="primary" (click)="goToTab3()">
+          <ion-icon name="home"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+  </ion-content>
+  

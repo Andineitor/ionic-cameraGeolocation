@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+    <ion-toolbar color="success">
+        <ion-title>Photo</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content style="background-color: Medium-tint">
+
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+        <ion-fab-button (click)="addPhotoToGallery()">
+            <ion-icon name="camera"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button color="primary" (click)="goToTab1()">
+          <ion-icon name="images"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+      <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+        <ion-fab-button color="primary" (click)="goToHome()">
+          <ion-icon name="home"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+</ion-content>
